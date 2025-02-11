@@ -7,6 +7,8 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 a {
@@ -18,9 +20,27 @@ h2 {
   font-weight: 700;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h3,
 .hero-btn,
-.header-link {
+.header-item-link {
   font-weight: 500;
 }
 
@@ -39,12 +59,12 @@ h3,
   color: #2e2f42;
 }
 
-.header-link,
-.advantages-list-title,
+.header-item-link,
+.advantages-item-title,
 .team-title,
-.team-list-title,
+.team-item-title,
 .portfolio-title,
-.portfolio-list-title {
+.portfolio-item-title {
   color: #2e2f42;
 }
 
@@ -62,12 +82,12 @@ h3,
 
 .header-contact-link:hover,
 .header-contact-link:focus,
-.header-link:hover,
-.header-link:focus {
+.header-item-link:hover,
+.header-item-link:focus {
   color: #404bbf;
 }
 
-.header-link {
+.header-item-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -107,13 +127,13 @@ h3,
 
 /* section 2 Advantages of our company */
 
-.advantages-list-title {
+.advantages-item-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.advantages-text {
+.advantages--item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -134,17 +154,17 @@ h3,
   text-transform: capitalize;
 }
 
-.team-list {
+.team-item {
   background-color: #ffffff;
 }
-.team-list-title {
+.team-item-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
 }
 
-.team-list-text {
+.team-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -162,14 +182,14 @@ h3,
   text-transform: capitalize;
 }
 
-.portfolio-list-title {
+.portfolio-item-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
 }
 
-.portfolio-list-text {
+.portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
