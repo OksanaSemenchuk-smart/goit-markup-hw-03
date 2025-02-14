@@ -113,11 +113,11 @@ header {
 }
 
 .header-item-link {
-  display: block;
   padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 
 .header-nav {
@@ -126,6 +126,7 @@ header {
 }
 
 .header-logo-box {
+  display: inline-block;
   padding: 24px 0;
   margin-right: 76px;
 }
@@ -144,13 +145,18 @@ header {
 
 /* #endregion  header */
 
-/* section 1 */
+/* #region section 1 */
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .hero-container {
-  padding-top: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-btn,
@@ -163,6 +169,7 @@ header {
   letter-spacing: 0.04em;
   background: #4d5ae5;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -175,47 +182,101 @@ header {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
-/* end section 1 */
+/* #endregion section 1 */
 
-/* section 2 Advantages of our company */
+/* #region section 2 Advantages of our company */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0px, 0px, 0px, 0px);
+  overflow: hidden;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
 
 .advantages-item-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 
-.advantages--item-text {
+.advantages-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* end section 2 Advantages of our company */
+/* #endregion section 2 Advantages of our company */
 
-/* section 3 Our team */
+/* #region section 3 Our team */
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
+.team-item-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-item-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .team-item-text {
@@ -224,9 +285,13 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
 }
-/* end section 3 Our team */
+/* #endregion section 3 Our team */
 
-/* section 4 - Our Portfolio*/
+/* #region section 4 - Our Portfolio*/
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .portfolio-title {
   font-size: 36px;
@@ -234,6 +299,26 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  /* width: calc((100% - 48px) / 3); */
+}
+
+.portfolio-item {
+  padding-bottom: 48px;
+}
+
+.portfolio-item-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .portfolio-item-title {
@@ -241,6 +326,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -249,12 +335,19 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
 }
-/* end section 4 - Our Portfolio*/
+/* #endregion section 4 - Our Portfolio*/
 
-/* footer*/
+/* #region footer*/
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  display: block;
+  padding-bottom: 16px;
 }
 
 .footer-logo-part,
@@ -266,6 +359,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
-/* end footer*/
+/* #endregion footer*/
