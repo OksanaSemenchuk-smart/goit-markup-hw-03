@@ -149,8 +149,8 @@ header {
 
 .hero {
   background-color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-container {
   display: flex;
@@ -170,6 +170,10 @@ header {
   background: #4d5ae5;
   cursor: pointer;
   padding: 16px 32px;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -223,7 +227,7 @@ header {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .advantages-item-text {
@@ -248,7 +252,7 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -276,7 +280,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -299,7 +303,7 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -308,17 +312,15 @@ header {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   /* width: calc((100% - 48px) / 3); */
 }
 
-.portfolio-item {
-  padding-bottom: 48px;
-}
-
 .portfolio-item-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
 }
 
 .portfolio-item-title {
@@ -326,7 +328,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -346,8 +348,8 @@ header {
 }
 
 .footer-logo {
-  display: block;
-  padding-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part,
