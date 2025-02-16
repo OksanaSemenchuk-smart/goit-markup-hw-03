@@ -327,7 +327,7 @@ header {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 8px;
 }
 
@@ -335,7 +335,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
 }
 /* #endregion section 4 - Our Portfolio*/
 
